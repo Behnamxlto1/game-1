@@ -1,0 +1,17 @@
+import random
+
+while True:
+    Dice = random.randint(1,6)
+    User = str(input("Press 'e' to start enter and press 'q' to exit (e/q):"))
+    if User == "e":
+        print (Dice)
+        if Dice == 6:
+            confirmation = input("Well done, you have received 2 bonus dice. Press enter to continue!.")
+            if confirmation == "" :
+                for i in range (2):
+                    Bonus = random.randint(1,6)
+                    print ("Dice Prize")
+        else:
+            print("again.")
+    if User == "q" :
+        break
